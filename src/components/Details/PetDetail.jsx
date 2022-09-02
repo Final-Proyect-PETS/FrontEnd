@@ -48,9 +48,10 @@ export default function PetDetail() {
   return Object.keys(petDetail).length ? (
     <div>
       <NavBar />
-      <h2 className="flex justify-center font-semibold text-3xl mt-3">
+
+      <h1 className="flex justify-center font-semibold text-3xl mt-3">
         Detalles 🐶
-      </h2>
+      </h1>
 
       <div className="flex w-2/3 my-10 ml-60 flex-row border-2 border-black">
         <div>
@@ -174,11 +175,6 @@ export default function PetDetail() {
                     "ESTA MASCOTA ESTA BUSCANDO NUEVO DUEÑO!"
                   </h2>
                   <div className="flex space-between">
-                    <Link to={`/reportpet`}>
-                      <button className="py-2 px-4 my-2 mb-5 mr-2 w-full bg-yellow-900 hover:bg-yellow-700 focus:ring-yellow-900 focus:ring-offset-yellow-200 text-white w-30 transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
-                        DENUNCIAR PUBLICACION
-                      </button>
-                    </Link>
                     <Link to={`/users/${petDetail.user._id}`}>
                       <button className="py-2 px-4 my-2 mb-5 mr-2 w-full bg-yellow-900 hover:bg-yellow-700 focus:ring-yellow-900 focus:ring-offset-yellow-200 text-white w-30 transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
                         PERFIL DEL DUEÑO

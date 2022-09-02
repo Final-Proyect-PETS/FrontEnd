@@ -145,7 +145,7 @@ export default function Donation() {
               </h2>
             </div>
             <input
-              type="text" maxLength="4"
+              type="text"
               name="name"
               value={input.name}
               onChange={(e) => handleChange(e)}
