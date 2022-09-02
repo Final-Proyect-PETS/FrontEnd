@@ -20,11 +20,13 @@ export default function Conversations({ conversation, currentUser }) {
   }, [currentUser, conversation]);
 
   return (
-    <div>
-      <img src={userr?.image} alt="" className="w-20 h-20 rounded-full" />
-      <h1 className="text-xl">
-        {userr?.first_name} {userr?.last_name}
-      </h1>
-    </div>
+    <>
+      <div className="flex items-center p-2">
+        <img src={userr?.image} alt="" className="w-14 h-14 rounded-full" />
+        <div className="text-md flex pl-3 text-gray-700 font-semibold">
+          {userr?.first_name} {userr?.last_name}
+        </div>
+      </div>
+    </>
   );
 }
